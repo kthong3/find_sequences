@@ -6,13 +6,11 @@ def find_sequences(array)
 
   while i < beginning_array.length
     if i == beginning_array.length - 1
-      sequence += beginning_array[i].to_s + "-"
-      sequence += end_array[i].to_s
+      sequence += beginning_array[i].to_s + "-" + end_array[i].to_s
     elsif beginning_array[i] == end_array[i]
       sequence += beginning_array[i].to_s + ", "
     else
-      sequence += beginning_array[i].to_s + "-"
-      sequence += end_array[i].to_s + ", "
+      sequence += beginning_array[i].to_s + "-" + end_array[i].to_s + ", "
     end
     i += 1
   end
