@@ -1,20 +1,3 @@
-# input array
-# output string of sequences
-
-# find beginning of sequence
-  # iterate through array
-    # for each number
-      # check if previous number does not exist
-      # if it it doesn't, it is the beginning of a sequence
-
-# find end of sequence
-  # iterate through array
-    # for each number
-        # check if next number does not exist
-        # if it it doesn't, it is the end of a sequence
-
-array = [1,2,3,6,7,8,12,18,19,20]
-
 def find_sequences(array)
   sequence = ""
   i = 0
@@ -44,4 +27,5 @@ def find_end(array)
   ending = array.select {|number| number if !array.include?(number.next)}
 end
 
+array = [1,2,3,6,7,8,12,18,19,20]
 p find_sequences(array)
